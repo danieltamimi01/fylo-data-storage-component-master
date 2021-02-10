@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.4;
+  color: #fff;
+  overflow-x: hidden;
+  background-color: #0c122c;
+}
+
+.container {
+  max-width: 1270px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+main {
+  background: url(../images/bg-mobile.png) no-repeat center top/cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .container .left {
+  background-color: #1d2c67;
+  padding: 2rem;
+  border-radius: 10px 5rem 10px 10px;
+  margin-bottom: 1rem;
+}
+
+main .container .left .logo {
+  margin-bottom: 1.5rem;
+}
+
+main .container .left .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .container .left .icons div {
+  margin-right: 1rem;
+  background-color: #0c122c;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+main .container .right {
+  background-color: #1d2c67;
+  padding: 1.5rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+main .container .right > p {
+  color: #dddbff;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+main .container .right .process {
+  width: 100%;
+  height: 25px;
+  border: 4px solid #0c122c;
+  border-radius: 5rem;
+  background-color: #0c122c;
+  margin: 1rem 0 .5rem 0;
+  overflow: hidden;
+}
+
+main .container .right .process div {
+  position: relative;
+  border-radius: 5rem;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(90deg, #ffa399, #ff4d97);
+}
+
+main .container .right .process div::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-45%);
+          transform: translateY(-45%);
+  right: 2px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #dddbff;
+}
+
+main .container .right .gb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: .8rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+main .container .right .white-box {
+  position: absolute;
+  background-color: #fff;
+  color: #848794;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main .container .right .white-box strong {
+  color: #0c122c;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+main .container .right .white-box p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1080px) {
+  main {
+    background: url(../images/bg-desktop.png) no-repeat;
+    background-position: 0 120%;
+    background-size: contain;
+  }
+  main .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 5fr;
+        grid-template-columns: 3fr 5fr;
+    grid-gap: 2rem;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  main .container .left {
+    margin-bottom: 0;
+    padding: 4rem 10rem 4rem 4rem;
+    border-top-right-radius: 8rem;
+  }
+  main .container .right {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 3rem;
+  }
+  main .container .right > p {
+    padding: unset;
+  }
+  main .container .right .gb {
+    padding-bottom: 0rem;
+  }
+  main .container .right .white-box {
+    top: -4.5rem;
+    right: 3rem;
+    left: unset;
+    -webkit-transform: none;
+            transform: none;
+    padding: 1rem 2rem;
+  }
+  main .container .right .white-box:after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 40px solid #fff;
+    border-left: 40px solid transparent;
+  }
+}
+/*# sourceMappingURL=main.css.map */
